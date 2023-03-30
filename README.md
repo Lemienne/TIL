@@ -21,3 +21,20 @@
   - `git commit -m`
 - 스테이징 영역
   - `git add` 명령어로 커밋에 포함시키고 싶은 파일만 스테이징 영역에 추가
+
+## 2023-03-31 
+- HTML 미디어 태그 
+  - 이미지 삽입하기 
+    ```HTML
+    <img src="CONTENT" alt="NAME" width="SIZE">
+    ```
+  - 음악 삽입하기
+    ```HTML 
+    <audio controls="controls"> 
+        <source src="FILE.mp3" type="audio/mp3">
+    ```
+  - 동영상 삽입하기
+    ```HTML
+    <video controls="controls">
+        <source src="FILE.mp4" type="video/mp4">
+    ```
