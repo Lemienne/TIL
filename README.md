@@ -40,5 +40,7 @@
     ```
     
 ## 2023-04-02
-* Markdown 
+- Markdown 
   * [Markdown 기초](https://github.com/Lemienne/TIL/blob/main/documents/Markdown/markdown-basic.md)
+- HTML 입력 양식 태그와 구조화 태그 
+  * [HTML 문법](https://github.com/Lemienne/TIL/blob/main/documents/HTML/HTML.md)
