@@ -19,7 +19,7 @@
     * 데이터의 크기가 한정되어 있음
 - POST: 별도의 방법을 사용해 데이터를 해당 주소로 전달
     * 데이터 용량에 제한 없음 
-
+***
 ### 1.2. input 태그
 - type : 입력 태그의 유형 지정
     * 다양한 종류의 기본 입력 양식 생성 가능
@@ -49,24 +49,7 @@
 </body>
 ```
 - 자주 사용되는 type 속성들   
-- 위에 쓰인 속성들 이외에도, 다양한 속성들이 존재한다. 
-> <body>
->    <form>
->        사용자가 입력하는 입력 양식<br>
->        <input type="text" name="text" value="text"><br>
->        <input type="password" name="password" value="password"><br>
->        <input type="file" name="file" value="file"><br>
->        <input type="checkbox" name="checkbox" value="checkbox"><br>
->        <input type="radio" name="radio" value="radio"><br>
->        보이지 않는 입력 양식<br>
->        <input type="hidden" name="hidden" value="hidden"><br>
->        버튼<br>
->        <input type="button" value="button"><br>
->        <input type="reset" value="reset"><br>
->        <input type="submit" value="submit"><br>
->        <input type="image" src="http://placehold.it/100x100">
->    </form>
-> </body>
+- 위에 쓰인 속성들 이외에도, 다양한 속성들이 존재한다.
 
 ### 1.2.1. label 태그
 * input 태그를 설명할 때 사용
@@ -77,11 +60,7 @@
     <input id="name" type="text">
 </form>
 ```
-<form>
-    <label for="name">이름</label>
-    <input id="name" type="text">
-</form>
-
+***
 ### 1.2.2. name 태그
 - 라디오 버튼의 name 속성을 사용하여 여러 대상 중 하나만 선택하는 형태 구현 가능
 ```HTML
@@ -99,24 +78,8 @@
     </form>
 </body>
 ```
-<body>
-    <form>
-        <fieldset>
-            <tr>
-                <td>성별</td><br>
-                <td>
-                    <input id="man" type="radio" name="gender" value="m">
-                    <label for="man">남자</label>
-                    <input id="woman" type="radio" name="gender" value="w">
-                    <label for="woman">여자</label>
-                </td>
-            </tr>
-        </fieldset>
-    </form>
-</body>
-
 radio 버튼은 name 속성을 같게 입력해야 여러 항목 중 하나만 선택됩니다.
-
+***
 ### 1.3. 선택 가능한 입력 양식
 ### 1.3.1. select 태그
 - 목록으로 보여주는 항목 중 하나 또는 여러 개를 선택할 때 사용
@@ -131,15 +94,7 @@ radio 버튼은 name 속성을 같게 입력해야 여러 항목 중 하나만 �
     </select>
 </body>
 ```
-<body>
-    <select>
-        <option>HTML</option>
-        <option>CSS</option>
-        <option>JavaScript</option>
-        <option>TypeScript</option>
-    </select>
-</body>
-
+***
 ### 1.3.2. multiple 속성
 - 여러 항목 선택 가능
 - 스마트폰에서는 깔끔하게 출력,  데스크톱에서는 별로...
@@ -154,17 +109,7 @@ radio 버튼은 name 속성을 같게 입력해야 여러 항목 중 하나만 �
     </select>
 </body>
 ```
-<body>
-    <select multiple="multiple">
-        <option>HTML</option>
-        <option>CSS</option>
-        <option>JavaScript</option>
-        <option>TypeScript</option>
-    </select>
-</body>
-
-> 일반 데스크톱 환경이면 알 수 있다시피, 항목들을 선택 방식이 명확하지 않다. 
-
+***
 ### 1.3.3. optgroup 태그
 선택 옵션을 그룹으로 묶을 수 있다. 
 ```HTML
@@ -182,23 +127,10 @@ radio 버튼은 name 속성을 같게 입력해야 여러 항목 중 하나만 �
     </select>
 </body>
 ```
-<body>
-    <select>
-        <optgroup label="HTML5">
-            <option>Multimedia Tag</option>
-            <option>Connectivity</option>
-            <option>Device Access</option>
-        </optgroup>
-        <optgroup label="CSS">
-            <option>Animation</option>
-            <option>3D Transform</option>
-        </optgroup>
-    </select>
-</body>
 
 > - 최근에는 잘 사용하지 않는 편
 >   * select 태그 대신 JavaScript를 사용하여, 웹 페이지와 어울리게 "옵션 선택"을 구현
-  
+***
 ### 1.3.4. fieldset, legend 태그
 - fieldset 태그 : 입력 양식을 그룹으로 묶을 수 있음
 - legend 태그 : 묶인 입력 양식에 이름을 지정할 수 있음
@@ -224,24 +156,6 @@ radio 버튼은 name 속성을 같게 입력해야 여러 항목 중 하나만 �
     </form>
 </body>
 ```
-<body>
-    <form>
-        <fieldset>
-            <legend>입력 양식</legend>
-            <table>
-                <tr>
-                    <td><label for="name">이름</label></td>
-                    <td><input id="name" type="text"></td>
-                </tr>
-                <tr>
-                    <td><label for="mail">이메일</label></td>
-                    <td><input id="mail" type="email"></td>
-                </tr>
-            </table>
-            <input type="submit">
-        </fieldset>
-    </form>
-</body>
 
 ## HTML 문서 구조화
 ## 1. 공간 분할 태그 
@@ -323,5 +237,6 @@ div 태그를 활용한 웹 페이지 레이아웃 구성
 </body>
 ```
 
+시맨틱 태그를 활용한 웹 페이지 레이아웃 구성
 - 시맨틱 태그를 사용하여 각 태그에 의미 부여
 - 가독성이 이전 코드 보다 좋다. 
