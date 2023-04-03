@@ -1,4 +1,82 @@
 # HTML5
+
+## 미디어 태그
+- 웹 페이지에 멀티미디어를 넣을 때 사용하는 태그 
+### img 태그
+표시하고 싶은 이미지 파일을 프로젝트에 추가 후 코드 작성
+> img 태그 속성
+> - src : 이미지의 경로 지정
+> - alt : 이미지가 없을 때 나오는 글자 지정
+> - width : 이미지의 너비 지정
+> - height : 이미지의 높이 지정
+```HTML
+<body>
+    <!-- 같은 폴더에 있을 때 -->
+    <img src="markdown.jpg" alt="markdown" width="300">
+    <!-- 다른 폴더에 위치하여 상대 위치 사용 -->
+    <img src="../assets/img/markdown.jpg" alt="markdown" width="300">
+    <img src="nothing" alt="그림이 존재하지 않습니다." width="300"
+</body>
+```
+
+***
+### audio 태그
+삽입하고 싶은 오디오 파일을 프로젝트에 추가 후 코드 작성
+> audio 태그 속성
+> - src : 음악 파일의 경로 지정
+> - preload : 음악을 준비 중일때 데이터를 모두 불러올지 여부 지정
+> - autoplay : 음악의 자동 재생 여부 지정
+> - loop : 음악의 반복 여부 지정
+> - controls : 음악 재생 도구 출력 여부 지정
+```HTML
+<body>
+    <audio src="Piano.mp3" controls="controls"></audio>
+</body>
+```
+웹 브라우저에 제약 없이 오디오 파일 삽입하는 방법
+```HTML
+<body>
+    <audio controls="controls">
+        <source src="Piano.mp3" type="audio/mp3">
+        <source src="Piano.ogg" type="audio/ogg">
+    </audio>
+</body>
+```
+웹 페이지마다 지원하는 확장자가 모두 다르다.   
+위 문제를 해결하기 위해서는 source 태그를 사용하여 해결할 수 있다.
+- type 속성을 사용하여 브라우저에 파일 확장자를 알릴 수 있음
+- 사용하지 않을 경우 웹 브라우저가 음악 파일을 다운로드 후 재생가능 여부를 확인하는 절차가 필요함.
+***
+### video 태그 
+삽입하고 싶은 비디오 파일을 프로젝트에 추가 후 코드 작성
+> video 태그 속성
+> - src : 비디오 파일의 경로 지정
+> - preload : 비디오를 준비 중일때 데이터를 모두 불러올지 여부 지정
+> - autoplay : 비디오의 자동 재생 여부 지정
+> - loop : 비디오의 반복 여부 지정
+> - controls : 비디오 재생 도구 출력 여부 지정
+> - width : 비디오의 너비 지정
+> - height : 비디오의 높이 지정
+```HTML
+<body>
+    <video controls="controls">
+        <source src="Wildlife.mp4" type="video/mp4">
+        <source src="Wildlife.ogg" type="video/ogg">
+    </video>
+</body>
+```
+poster 속성을 사용하여 동영상을 불러오는 동안 사용자에게 보여 줄 이미지를 지정할 수 있음
+```HTML
+<body>
+    <video controls="controls" poster="http://via.placeholder.com/680x360">
+        <source src="Wildlife.mp4" type="video/mp4">
+        <source src="Wildlife.ogg" type="video/ogg">
+    </video>
+</body>
+```
+> 예제에서는 http://via.placeholder.com/680x360 를 사용하였다.   
+> 이 웹 사이트는 주소 다음에 너비x높이를 입력하면 해당 크기의 이미지를 제공한다. 
+
 ## 입력 양식 태그
 - 입력 양식?
     * 사용자에게 정보를 입력받는 요소
