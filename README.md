@@ -53,3 +53,12 @@
 - git branch
 - GitHub "Pull Request"
 - git merge
+> git push 취소하기 
+> 1. 워킹 디렉토리에서 commit 되돌린다. 
+>   * 가장 최근의 commit을 취소하고 워킹 디렉터리를 되돌린다.
+>   * `$ git reset HEAD^`
+> 2. 되돌려진 상태에서 다시 commit을 한다. 
+>   * `$ git commit -m "Write commit messages"`
+> 3. 원격 저장소에 강제로 push 한다. 
+>   * `$ git push origin [branch name] -f`
+>   * `$ git push origin +[branch name]`
