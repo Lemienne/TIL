@@ -52,3 +52,4 @@
 ## 2023-04-04
 - git branch
 - GitHub "Pull Request"
+- git merge
